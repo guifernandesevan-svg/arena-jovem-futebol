@@ -11,7 +11,7 @@ A escolinha possui uma única unidade e conta com professores responsáveis pelo
 
 ### 1.2 Problema ou necessidade
 
-Atualmente, a administração da Arena Jovem Futebol enfrenta dificuldades para organizar as informações dos alunos, responsáveis, professores, turmas, matrículas e pagamentos.
+Atualmente, a administração da Arena Jovem Futebol enfrenta dificuldades para organizar as informações dos alunos, responsáveis, professores, turmas, matrículas, contratos e pagamentos.
 
 O controle dessas informações é realizado manualmente, por meio de planilhas e anotações, o que pode ocasionar perda de dados, informações duplicadas e dificuldades na consulta de registros.
 
@@ -21,18 +21,19 @@ Diante dessa situação, surgiu a necessidade de desenvolver um banco de dados c
 
 O objetivo do projeto é desenvolver um banco de dados relacional para a Arena Jovem Futebol, utilizando PostgreSQL por meio da plataforma Supabase.
 
-O sistema deverá permitir o cadastro e a consulta de alunos, responsáveis, professores, turmas, matrículas e pagamentos, além de facilitar o acompanhamento das inscrições e das mensalidades.
+O sistema deverá permitir o cadastro e a consulta de alunos, responsáveis, professores, turmas, matrículas, contratos e pagamentos, além de facilitar o acompanhamento das inscrições, dos contratos e das mensalidades.
 
 ### 1.4 Entidades identificadas
 
-Para atender às necessidades da empresa, foram identificadas seis entidades:
+Para atender às necessidades da empresa, foram identificadas sete entidades:
 
 - **Aluno:** armazena os dados pessoais dos alunos da escolinha.
 - **Responsável:** contém as informações dos responsáveis pelos alunos.
 - **Professor:** armazena os dados dos profissionais responsáveis pelos treinamentos.
 - **Turma:** organiza os alunos em grupos de treinamento.
 - **Matrícula:** registra a inscrição de um aluno em uma turma.
-- **Pagamento:** registra os pagamentos realizados pelos alunos referentes às mensalidades.
+- **Contrato:** armazena as informações dos acordos realizados entre a escolinha e os responsáveis pelos alunos.
+- **Pagamento:** registra os pagamentos realizados referentes às mensalidades.
 
 ### 1.5 Relacionamentos identificados
 
@@ -42,6 +43,7 @@ As entidades possuem relacionamentos que representam o funcionamento da escolinh
 - Um aluno pode realizar várias matrículas ao longo do tempo.
 - Um professor pode ser responsável por várias turmas.
 - Uma turma pode possuir várias matrículas.
+- Cada matrícula possui um único contrato.
 - Uma matrícula pode possuir vários pagamentos.
 
 
