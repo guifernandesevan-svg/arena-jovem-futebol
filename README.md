@@ -89,7 +89,6 @@ O banco de dados foi estruturado em cinco tabelas principais e uma tabela auxili
 
 - **PK (Primary Key):** identifica cada registro de forma única.
 - **FK (Foreign Key):** estabelece a ligação entre as tabelas.
-- **UNIQUE:** garante que um professor não seja associado a mais de uma turma.
 - O atributo idade não foi incluído como coluna, pois é derivado da data de nascimento.
 - A tabela Telefone_Responsavel foi criada para permitir que um responsável tenha vários números de telefone.
 - <img width="1480" height="797" alt="Captura de tela 2026-11-27 124141" src="https://github.com/user-attachments/assets/e9612f0a-c641-4c83-ba5c-9541af2a3e49" />
