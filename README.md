@@ -80,6 +80,86 @@ A entidade Matrícula funciona como uma entidade associativa, permitindo represe
 
 ## 3. Modelagem Lógica
 
+A modelagem lógica transforma o Diagrama Entidade-Relacionamento em tabelas, definindo seus atributos, tipos de dados, chaves primárias (PK) e chaves estrangeiras (FK).
+
+O banco de dados foi estruturado em cinco tabelas principais e uma tabela auxiliar, utilizando tipos de dados compatíveis com PostgreSQL.
+
+### Tabela Aluno
+
+| Atributo | Tipo de dado | Chave |
+|---|---|---|
+| id_aluno | INT | PK |
+| nome | VARCHAR(100) | — |
+| data_nascimento | DATE | — |
+| rua | VARCHAR(100) | — |
+| numero | VARCHAR(10) | — |
+| bairro | VARCHAR(60) | — |
+| cep | VARCHAR(9) | — |
+| data_cadastro | DATE | — |
+| id_responsavel | INT | FK |
+
+### Tabela Responsável
+
+| Atributo | Tipo de dado | Chave |
+|---|---|---|
+| id_responsavel | INT | PK |
+| nome | VARCHAR(100) | — |
+| cpf | VARCHAR(14) | — |
+| data_nascimento | DATE | — |
+| rua | VARCHAR(100) | — |
+| numero | VARCHAR(10) | — |
+| bairro | VARCHAR(60) | — |
+| cep | VARCHAR(9) | — |
+
+### Tabela Telefone_Responsavel
+
+| Atributo | Tipo de dado | Chave |
+|---|---|---|
+| id_telefone | INT | PK |
+| telefone | VARCHAR(20) | — |
+| id_responsavel | INT | FK |
+
+### Tabela Professor
+
+| Atributo | Tipo de dado | Chave |
+|---|---|---|
+| id_professor | INT | PK |
+| nome | VARCHAR(100) | — |
+| cpf | VARCHAR(14) | — |
+| data_nascimento | DATE | — |
+| salario | NUMERIC(10,2) | — |
+| data_contratacao | DATE | — |
+
+### Tabela Turma
+
+| Atributo | Tipo de dado | Chave |
+|---|---|---|
+| id_turma | INT | PK |
+| categoria | VARCHAR(50) | — |
+| horario | TIME | — |
+| capacidade | INT | — |
+| id_professor | INT | FK e UNIQUE |
+
+### Tabela Matrícula
+
+| Atributo | Tipo de dado | Chave |
+|---|---|---|
+| id_matricula | INT | PK |
+| data_matricula | DATE | — |
+| status | VARCHAR(30) | — |
+| id_aluno | INT | FK |
+| id_turma | INT | FK |
+
+### Observações
+
+- **PK (Primary Key):** identifica cada registro de forma única.
+- **FK (Foreign Key):** estabelece a ligação entre as tabelas.
+- **UNIQUE:** garante que um professor não seja associado a mais de uma turma.
+- O atributo idade não foi incluído como coluna, pois é derivado da data de nascimento.
+- A tabela Telefone_Responsavel foi criada para permitir que um responsável tenha vários números de telefone.
+- <img width="1480" height="797" alt="Captura de tela 2026-11-27 124141" src="https://github.com/user-attachments/assets/e9612f0a-c641-4c83-ba5c-9541af2a3e49" />
+
+
 ## 4. Modelagem Física
 
 ## 5. Dados
