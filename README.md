@@ -45,7 +45,38 @@ As entidades possuem relacionamentos que representam o funcionamento da escolinh
 - A entidade Matrícula faz a ligação entre Aluno e Turma, representando o relacionamento muitos para muitos (N:N) entre essas entidades.
 
 
+
 ## 2. Modelagem Conceitual
+
+A modelagem conceitual da Arena Jovem Futebol foi desenvolvida por meio de um Diagrama Entidade-Relacionamento (DER), representando as principais informações e os relacionamentos necessários para o funcionamento da escola de futebol.
+
+O modelo possui cinco entidades principais:
+
+- **Aluno:** armazena os dados dos alunos cadastrados na escola.
+- **Responsável:** contém os dados dos responsáveis pelos alunos.
+- **Professor:** armazena as informações dos professores.
+- **Turma:** representa as turmas disponíveis na escola.
+- **Matrícula:** registra a matrícula dos alunos nas turmas.
+
+### Relacionamentos
+
+- **Responsável e Aluno (1:N):** um responsável pode estar associado a vários alunos, mas cada aluno possui um responsável cadastrado.
+- **Professor e Turma (1:1):** cada professor é responsável por uma única turma, e cada turma possui um único professor.
+- **Aluno e Matrícula (1:N):** um aluno pode possuir várias matrículas ao longo do tempo, mas cada matrícula pertence a um único aluno.
+- **Turma e Matrícula (1:N):** uma turma pode possuir várias matrículas, mas cada matrícula pertence a uma única turma.
+
+A entidade Matrícula funciona como uma entidade associativa, permitindo representar o relacionamento muitos para muitos (N:N) entre Aluno e Turma.
+
+### Tipos de atributos utilizados
+
+- **Simples:** nome, CPF e data de nascimento.
+- **Composto:** endereço, dividido em rua, número, bairro e CEP.
+- **Multivalorado:** telefone do responsável, que pode possuir mais de um número.
+- **Derivado:** idade do aluno, calculada a partir da data de nascimento.
+- **Identificador:** IDs utilizados como chaves primárias das entidades.
+- <img width="1315" height="815" alt="Captura de tela 2026-11-27 102911" src="https://github.com/user-attachments/assets/69df9aea-04dd-429a-99cb-2ef4f11abcde" />
+
+
 
 ## 3. Modelagem Lógica
 
