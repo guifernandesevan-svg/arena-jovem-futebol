@@ -1,3 +1,4 @@
+Aluno: Guilherme Evangelista Fernandes
 # Arena Jovem Futebol
 **Sistema de Gestão de uma Escolinha de Futebol**
 
@@ -238,3 +239,44 @@ Foi realizada a exclusão do aluno de teste Pedro Santos, utilizando o comando `
 
 Relatório 1 — Alunos com matrícula ativa
 Objetivo: visualizar os alunos que estão frequentando as aulas, mostrando também o nome de seus responsáveis e a categoria da turma.
+<img width="1492" height="862" alt="Captura de tela 2026-11-28 130402" src="https://github.com/user-attachments/assets/9d9a8387-4fd7-4334-9a5b-e7bf7f61040d" />
+
+Relatório 2 — Alunos da categoria Sub-15
+Objetivo: consultar os alunos com matrícula ativa na categoria Sub-15 e identificar seus professores.
+<img width="1317" height="855" alt="Captura de tela 2026-11-28 131506" src="https://github.com/user-attachments/assets/3a8639aa-b36b-4564-9c71-3131e0569d7b" />
+
+Relatório 3 — Matrículas pendentes
+Objetivo: identificar os alunos que ainda possuem alguma matrícula pendente.
+
+<img width="1346" height="865" alt="Captura de tela 2026-11-28 131703" src="https://github.com/user-attachments/assets/470c05a9-8414-4619-a1f8-7da5ae3fa62f" />
+
+Relatório 4 — Turmas e seus professores
+Objetivo: consultar os professores responsáveis por cada turma, seus horários e a capacidade de alunos.
+
+<img width="1473" height="852" alt="Captura de tela 2026-11-28 131854" src="https://github.com/user-attachments/assets/7d1fc8c8-f597-41ab-b5ba-1af4b418db76" />
+
+Relatório 5 — Contato dos responsáveis pelos alunos
+Objetivo: facilitar o contato da escola com os responsáveis, mostrando o nome do aluno, o responsável e seu telefone.
+
+<img width="1320" height="853" alt="Captura de tela 2026-11-28 132027" src="https://github.com/user-attachments/assets/f4becf1c-a406-43ed-962e-402cdb572804" />
+
+Relatório 6 — Quantidade de alunos por turma
+Objetivo: acompanhar quantos alunos com matrícula ativa estão em cada turma e verificar quantas vagas ainda estão disponíveis.
+
+<img width="1440" height="852" alt="Captura de tela 2026-11-28 132333" src="https://github.com/user-attachments/assets/f440a475-1d70-46a6-9bac-a8492e11b60b" />
+
+Relatório 7 — Matrículas realizadas recentemente
+Objetivo: visualizar os alunos que realizaram matrícula nos últimos 30 dias e consultar a categoria escolhida.
+<img width="1380" height="877" alt="Captura de tela 2026-11-28 132451" src="https://github.com/user-attachments/assets/ec743582-743d-4d0e-b905-2e2579c9f661" />
+
+Relatório 8 — Alunos cadastrados no bairro Centro
+Objetivo: consultar os alunos que moram no bairro Centro e visualizar também o nome de seus responsáveis.
+<img width="1147" height="862" alt="Captura de tela 2026-11-28 132636" src="https://github.com/user-attachments/assets/2d5f93d9-103e-48dd-b626-9d1acb1ed29a" />
+
+Relatório 9 — Professores com salário a partir de R$ 3.000
+Objetivo: consultar os professores que recebem salário igual ou superior a R$ 3.000, mostrando também a turma pela qual são responsáveis.
+<img width="1270" height="852" alt="Captura de tela 2026-11-28 132848" src="https://github.com/user-attachments/assets/f980d3a5-5714-4da0-87dd-e326697e36c2" />
+
+Relatório 10 — Quantidade de matrículas por categoria
+Objetivo: descobrir quais categorias possuem mais alunos com matrícula ativa na escola.
+<img width="1022" height="637" alt="Captura de tela 2026-11-28 133027" src="https://github.com/user-attachments/assets/91298f6e-0b8b-4385-95bc-5e0aba21e1e5" />
