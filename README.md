@@ -96,6 +96,65 @@ O banco de dados foi estruturado em cinco tabelas principais e uma tabela auxili
 
 ## 4. Modelagem Física
 
+A modelagem física do projeto Arena Jovem Futebol foi implementada utilizando o **Supabase**, com o sistema de gerenciamento de banco de dados PostgreSQL.
+
+Foram criadas seis tabelas para organizar as informações dos alunos, responsáveis, professores, turmas, matrículas e telefones dos responsáveis.
+
+### 4.1 Criação das tabelas
+
+As tabelas foram criadas por meio de comandos SQL utilizando `CREATE TABLE` no SQL Editor do Supabase.
+
+As tabelas implementadas foram:
+
+- **aluno:** armazena os dados dos alunos.
+- **responsavel:** armazena os dados dos responsáveis.
+- **professor:** armazena os dados dos professores.
+- **turma:** armazena as informações das turmas.
+- **matricula:** registra as matrículas dos alunos nas turmas.
+- **telefone_responsavel:** permite armazenar os telefones dos responsáveis.
+
+A imagem abaixo demonstra as tabelas criadas no Supabase.
+
+![Tabelas criadas no Supabase](imagens/01_tabelas_criadas.png)
+
+### 4.2 Comandos SQL de criação
+
+A criação das tabelas foi realizada por meio de comandos `CREATE TABLE`, definindo os campos, os tipos de dados, as chaves primárias e as chaves estrangeiras.
+
+As capturas de tela abaixo demonstram os comandos utilizados no SQL Editor do Supabase.
+
+**Criação das tabelas:**
+
+![Comandos CREATE TABLE](imagens/08_execucao_create_table.png)
+
+### 4.3 Chaves e restrições
+
+Foram utilizadas chaves primárias (PK) para identificar cada registro de forma única e chaves estrangeiras (FK) para estabelecer os relacionamentos entre as tabelas.
+
+Também foi utilizada a restrição `UNIQUE` no campo `id_professor` da tabela `turma`, garantindo que um mesmo professor não seja associado a mais de uma turma.
+
+### 4.4 Relacionamentos e integridade referencial
+
+Os relacionamentos foram implementados por meio de chaves estrangeiras:
+
+- **Responsável e Aluno:** relacionamento 1:N.
+- **Professor e Turma:** relacionamento 1:1.
+- **Aluno e Matrícula:** relacionamento 1:N.
+- **Turma e Matrícula:** relacionamento 1:N.
+- **Responsável e Telefone_Responsavel:** relacionamento 1:N.
+
+A integridade referencial foi configurada por meio das chaves estrangeiras, garantindo que os registros relacionados estejam vinculados corretamente.
+
+Foram realizadas consultas utilizando `JOIN` para verificar o funcionamento dos relacionamentos entre as tabelas.
+
+### 4.5 Scripts SQL
+
+Os comandos utilizados na implementação do banco de dados estão disponíveis na pasta `sql` deste repositório.
+
+- [01_criacao_tabelas.sql](sql/01_criacao_tabelas.sql) — comandos de criação das tabelas.
+- [02_dados_teste.sql](sql/02_dados_teste.sql) — inserção dos dados utilizados nos testes.
+- [03_consultas_teste.sql](sql/03_consultas_teste.sql) — consultas utilizadas para verificar os relacionamentos.
+
 ## 5. Dados
 
 ## 6. CRUD
