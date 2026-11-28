@@ -200,6 +200,38 @@ O script utilizado para inserir os registros está disponível no repositório:
 
 - [04_insercao_500_registros.sql](sql/04_insercao_500_registros.sql) — comandos responsáveis pela inserção dos registros nas seis tabelas.
 
-## 6. CRUD
+## 6. CRUD - Create, Read, Update e Delete
+
+Foram realizadas as quatro operações básicas de manipulação de dados (CRUD) no Supabase, utilizando comandos SQL.
+
+### 6.1 Create (Inserção)
+
+Foi realizado o cadastro de um novo aluno na tabela `aluno`, utilizando o comando `INSERT INTO`.
+
+<img width="782" height="803" alt="Captura de tela 2026-11-28 123320" src="https://github.com/user-attachments/assets/eca9063d-c98b-47c9-b799-d371c075d03a" />
+
+
+
+### 6.2 Read (Consulta)
+
+Foi realizada uma consulta para localizar o aluno cadastrado, utilizando o comando `SELECT`.
+
+<img width="1498" height="807" alt="Captura de tela 2026-11-28 124345" src="https://github.com/user-attachments/assets/23604028-d533-42ef-b710-71dbac548675" />
+
+
+### 6.3 Update (Atualização)
+
+Foi realizada a atualização do bairro do aluno Pedro Santos, utilizando o comando `UPDATE`.
+
+<img width="541" height="785" alt="Captura de tela 2026-11-28 124510" src="https://github.com/user-attachments/assets/e667af3d-1698-4eef-928a-9e32013f07ad" />
+<img width="1530" height="832" alt="Captura de tela 2026-11-28 124604" src="https://github.com/user-attachments/assets/74970e5e-554f-4904-9e1b-a911e382cd25" />
+
+### 6.4 Delete (Exclusão)
+
+Foi realizada a exclusão do aluno de teste Pedro Santos, utilizando o comando `DELETE`. Em seguida, uma consulta confirmou que o registro não estava mais presente na tabela.
+
+
+<img width="1417" height="777" alt="Captura de tela 2026-11-28 124706" src="https://github.com/user-attachments/assets/0f260854-59f4-4f54-a21c-8aab15a39740" />
+<img width="602" height="756" alt="Captura de tela 2026-11-28 124758" src="https://github.com/user-attachments/assets/b4eea1be-3bf2-42b9-b902-33f5b4cb87f4" />
 
 ## 7. Relatórios
