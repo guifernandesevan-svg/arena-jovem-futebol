@@ -160,6 +160,46 @@ Os comandos utilizados na implementação do banco de dados estão disponíveis 
 
 ## 5. Dados
 
+Após a criação das tabelas no Supabase, foi realizada a inserção de dados para popular o banco de dados da Arena Jovem Futebol.
+
+Foram inseridos **500 registros em cada uma das seis tabelas**, totalizando **3.000 registros**.
+
+<img width="1460" height="353" alt="Captura de tela 2026-11-28 122316" src="https://github.com/user-attachments/assets/88308cef-df1b-4c62-9592-492f3a7afe92" />
+<img width="1462" height="492" alt="Captura de tela 2026-11-28 122307" src="https://github.com/user-attachments/assets/b2953af2-c8b3-4e8d-aa65-848a10623cf4" />
+<img width="1420" height="497" alt="Captura de tela 2026-11-28 122259" src="https://github.com/user-attachments/assets/ee4d414b-e159-450c-af07-b43eeacc994e" />
+<img width="1162" height="450" alt="Captura de tela 2026-11-28 122248" src="https://github.com/user-attachments/assets/7500feaf-ed46-4d9d-b5e6-19c6acc07cf5" />
+<img width="1461" height="535" alt="Captura de tela 2026-11-28 122238" src="https://github.com/user-attachments/assets/11f972a0-7875-43b7-ad90-1b919dae8174" />
+<img width="1498" height="567" alt="Captura de tela 2026-11-28 122225" src="https://github.com/user-attachments/assets/d3d8174f-f012-4ddb-8298-f7516e0972b5" />
+
+
+### 5.1 Inserção dos dados
+
+Os dados foram inseridos utilizando comandos SQL com `INSERT INTO` e `SELECT`, juntamente com a função `generate_series`, permitindo gerar vários registros de forma automática.
+
+As tabelas receberam os seguintes dados:
+
+- **aluno:** 500 registros de alunos.
+- **responsavel:** 500 registros de responsáveis.
+- **professor:** 500 registros de professores.
+- **turma:** 500 registros de turmas.
+- **matricula:** 500 registros de matrículas.
+- **telefone_responsavel:** 500 registros de telefones.
+
+### 5.2 Conferência dos registros
+
+Após a inserção, foram realizadas consultas utilizando `COUNT(*)` para verificar a quantidade de registros em cada tabela.
+
+O resultado confirmou que todas as seis tabelas possuem 500 registros, totalizando 3.000 registros no banco de dados.
+
+<img width="342" height="355" alt="Captura de tela 2026-11-28 122105" src="https://github.com/user-attachments/assets/e946c8ad-dd8a-49d5-bfd2-9c3859ccffaf" />
+
+
+### 5.3 Script SQL
+
+O script utilizado para inserir os registros está disponível no repositório:
+
+- [04_insercao_500_registros.sql](sql/04_insercao_500_registros.sql) — comandos responsáveis pela inserção dos registros nas seis tabelas.
+
 ## 6. CRUD
 
 ## 7. Relatórios
