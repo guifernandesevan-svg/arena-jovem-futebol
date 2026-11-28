@@ -125,9 +125,9 @@ As capturas de tela abaixo demonstram os comandos utilizados no SQL Editor do Su
 
 **Criação das tabelas:**
 
-<img width="1917" height="990" alt="CREATE_TABLE_3" src="https://github.com/user-attachments/assets/6ae7ebca-416d-4cd3-8f9f-a99538e24625" />
-<img width="1915" height="975" alt="CREATE_TABLE_2" src="https://github.com/user-attachments/assets/80f256f9-0bf4-4bf9-b0c9-3bbe97251721" />
-<img width="1917" height="972" alt="CREATE_TABLE" src="https://github.com/user-attachments/assets/6da90c1a-3103-4d50-a9dc-b005b46e3c90" />
+<img width="1917" height="972" alt="CREATE_TABLE" src="https://github.com/user-attachments/assets/a804a076-0414-4982-87d0-f7655e678d6f" />
+<img width="1915" height="975" alt="CREATE_TABLE_2" src="https://github.com/user-attachments/assets/57cd4747-d6b2-44c7-97a1-8315b374878c" />
+<img width="1917" height="990" alt="CREATE_TABLE_3" src="https://github.com/user-attachments/assets/00c176bd-afe2-4c5f-9b68-d30acb118216" />
 
 
 ### 4.3 Chaves e restrições
