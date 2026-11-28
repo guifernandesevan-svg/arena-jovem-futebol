@@ -235,3 +235,6 @@ Foi realizada a exclusão do aluno de teste Pedro Santos, utilizando o comando `
 <img width="602" height="756" alt="Captura de tela 2026-11-28 124758" src="https://github.com/user-attachments/assets/b4eea1be-3bf2-42b9-b902-33f5b4cb87f4" />
 
 ## 7. Relatórios
+
+Relatório 1 — Alunos com matrícula ativa
+Objetivo: visualizar os alunos que estão frequentando as aulas, mostrando também o nome de seus responsáveis e a categoria da turma.
